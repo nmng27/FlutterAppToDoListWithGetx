@@ -90,9 +90,9 @@ class TaskController extends GetxController{
     }
   }
 
-  Future<Task?> getTaskById(
+  Task? getTaskById(
     {required int id}
-  ) async{
+  ) {
     try{
       var task = list.where((e)=>e.id == id).firstOrNull;
       return task;
